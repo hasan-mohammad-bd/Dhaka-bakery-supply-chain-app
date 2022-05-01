@@ -1,3 +1,4 @@
+
 nav a {
     font-weight: 500;
     font-size: 1rem;
@@ -24,13 +25,11 @@ nav a:hover {
 }
 
 
-/* .container {
-    position: relative;
-}
 
-nav{
+/* nav{
     position: absolute;
-} */
+}  */
+
 .logo-holder {
     position: relative;
 
