@@ -1,5 +1,4 @@
 nav a {
-    margin-left: 30px;
     font-weight: 500;
     font-size: 1rem;
     /* font-family: 'Beau Rivage', cursive; */
@@ -14,19 +13,68 @@ nav a:hover {
     color: #dac393;
 }
 
+.logo-holder {
+    margin-left: 1.3rem;
+
+}
+
+.menu-bar {
+    color: #dac393;
+    font-size: 25px;
+}
+
+
+/* .container {
+    position: relative;
+}
+
+nav{
+    position: absolute;
+} */
+.logo-holder {
+    position: relative;
+
+}
+
+
+.logo-holder img {
+    position: absolute;
+    top: -31px;
+    z-index: 4;
+
+}
+
 
 
 @media only screen and (min-width: 900px) {
-    .logo-holder {
-        position: relative;
 
-    }
-    
-    .logo-holder img {
-        position: absolute;
-        top: -31px;
-        z-index: 4;
+    nav a {
+        margin-left: 30px;
+        /* margin: 10px; */
     
     }
+
+
+
+  }
+
+  @media only screen and (max-width: 899px) {
+    nav {
+        background-color: #3b332f;
+        width: 200px;
+        display: flex;
+        right: 1px;
+        z-index: 1;
+        text-align: center;
+        transition: all 0.5s ease-in;
+    }
+
+    
+    nav a {
+        padding: 7px 0;
+    
+    }
+
+
 
   }

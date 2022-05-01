@@ -4,13 +4,13 @@ import "./video.css";
 
 const Video = () => {
   return (
-    <div className="cover1 flex  justify-evenly items-center primary-color-text ">
-      <div className="transparent-grey p-10 flex items-center justify-center">
+    <div className="cover1 flex justify-evenly items-center primary-color-text ">
+      <div className="transparent-grey p-2 md:p-10 flex items-center justify-center">
         <div className="box">
-          <h1 className="font-normal primary-color-text text-6xl">
+          <h1 className="font-normal primary-color-text text-4xl md:text-6xl">
             Best bakery food chain provider in town
           </h1>
-          <p className="my-5">
+          <p className="my-2 md:my-5">
             We are manufacturer and supplier of bakeries items for 20 years in
             Dhaka City. We deliver the most quality full product around the city
             with very good price.
