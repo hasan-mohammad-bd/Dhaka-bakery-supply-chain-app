@@ -1,0 +1,47 @@
+.video{
+
+    background-position: center;
+    background-size: 100%;
+    height: 60vh;
+}
+
+.slider{
+    height: 70vh;
+}
+
+.cover1 {
+    background-image: url(../../img/cover1.jpg);
+    height: 70vh;
+    width: 100vw;
+    background-position: center;
+    background-size: 100%;
+    
+}
+.cover2 {
+    background-image: url(../../img/cover2.jpg);
+    height: 70vh;
+    width: 100vw;
+    background-position: center;
+    background-size: 100%;
+    
+}
+.cover3 {
+    background-image: url(../../img/cover3.jpg);
+    height: 70vh;
+    width: 100vw;
+    background-position: center;
+    background-size: 100%;
+    
+}
+
+h1 {
+    text-shadow: 0 0 5px black;
+   }
+
+.darker{
+ background-color: rgba(0, 0, 0, 0.877);
+}
+@media only screen and (min-width: 900px) {
+
+
+  }

@@ -1,10 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const AddItems = () => {
     return (
-        <div>
-            <h2>Add items section</h2>
-        </div>
+        <motion.div intial={{width: 0}} animate={{width:"100%"}} exit={{x: window.innerWidth}}>
+            <h2>This is add items section</h2>
+        </motion.div>
     );
 };
 

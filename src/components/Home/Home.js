@@ -1,10 +1,13 @@
 import React from 'react';
+import {motion} from 'framer-motion';
+import Video from '../Video/video';
 
 const Home = () => {
     return (
-        <div>
-            <h2>This is Home section</h2>
-        </div>
+        <motion.div intial={{width: 0}} animate={{width:"100%"}} exit={{x: window.innerWidth}}>
+        <Video></Video>
+
+        </motion.div>
     );
 };
 

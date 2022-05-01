@@ -4,7 +4,14 @@ nav a {
     font-size: 1rem;
     /* font-family: 'Beau Rivage', cursive; */
     color: #fcf1df;
+    display: inline-block;
+    transition: all 0.3s ease-in;
 
+}
+
+nav a:hover {
+    transform: translateY(3px);
+    color: #dac393;
 }
 
 
@@ -12,11 +19,13 @@ nav a {
 @media only screen and (min-width: 900px) {
     .logo-holder {
         position: relative;
+
     }
     
     .logo-holder img {
         position: absolute;
         top: -31px;
+        z-index: 4;
     
     }
 
