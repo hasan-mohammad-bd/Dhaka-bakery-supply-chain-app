@@ -1,46 +1,56 @@
-.video{
 
-    background-position: center;
-    background-size: 100%;
-    height: 60vh;
-}
 
-.slider{
-    height: 70vh;
-}
+
 
 .cover1 {
     background-image: url(../../img/cover1.jpg);
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
     background-position: center;
-    background-size: 100%;
-    
-}
-.cover2 {
-    background-image: url(../../img/cover2.jpg);
-    height: 70vh;
-    width: 100vw;
-    background-position: center;
-    background-size: 100%;
-    
-}
-.cover3 {
-    background-image: url(../../img/cover3.jpg);
-    height: 70vh;
-    width: 100vw;
-    background-position: center;
-    background-size: 100%;
+    background-size:cover;
+    background-attachment: fixed;
     
 }
 
-h1 {
-    text-shadow: 0 0 5px black;
+.box{
+    transform: skewX(10deg);
+    margin-left: 50px;
+    padding: 0 60px;
+}
+.transparent-grey{
+    background-color: #3b332f79;
+    height: 75vh;
+    transform: skewX(-10deg);
+    position: relative;
+    left: -40px;
+
+}
+
+.transparent-grey h1 {
+    font-family: 'Ms Madi', cursive;
+
+
    }
 
-.darker{
- background-color: rgba(0, 0, 0, 0.877);
+.btn1{
+    padding: 7px 20px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+    background-color:#fcf1df ;
+    color: #3b332f;
+    border: 2px solid #fcf1df;
+
 }
+
+.btn1:hover{
+    border: 2px solid #fcf1df;
+    background-color: transparent;
+    color: #fcf1df;
+}
+
+
+
 @media only screen and (min-width: 900px) {
 
 
