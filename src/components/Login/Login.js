@@ -1,9 +1,17 @@
 import React from 'react';
+import './Login.css'
 
 const Login = () => {
+
+
+    //submit the form
+
+    
     return (
-        <div>
-            <h2>This is login section</h2>
+        <div className='login-cover flex justify-center items-center'>
+            <div className='form-control'>
+                <form onClick={handlesubmit}></form>
+            </div>
         </div>
     );
 };

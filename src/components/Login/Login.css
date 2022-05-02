@@ -1,0 +1,7 @@
+.login-cover{
+    height: 80vh;
+    width:100vw;
+    background-image: url(../../img/login-cover.png);
+    background-position: center;
+    background-size: cover;
+}

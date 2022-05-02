@@ -7,11 +7,11 @@ import { AiOutlineCloseSquare } from "@react-icons/all-files/ai/AiOutlineCloseSq
 
 const Header = () => {
     const [menu, setMenu] = useState(false);
-    const [display, setDisplay] = useState(false)
+
 
     const menuSweeper = () => {
         setMenu(!menu)
-        setDisplay(!display)
+
     }
   return (
     <div className="third-color-bg navbar-full">
