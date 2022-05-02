@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="third-color-bg navbar-full">
       <div className="container mx-auto py-7 flex justify-between items-center relative">
-        <div className="logo-holder w-36">
+        <div className="logo-holder w-28 lg:w-36">
           <img className="w-full" src={img} alt="" />
         </div>
         <div>

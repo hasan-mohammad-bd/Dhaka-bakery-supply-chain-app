@@ -49,6 +49,23 @@
     color: #fcf1df;
 }
 
+.btn2{
+    padding: 7px 20px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fcf1df;
+    border: 2px solid #fcf1df;
+
+}
+
+.btn2:hover{
+    border: 2px solid #fcf1df;
+    background-color:#fcf1df ;
+    color: #3b332f;
+
+}
 
 
 @media only screen and (min-width: 900px) {
