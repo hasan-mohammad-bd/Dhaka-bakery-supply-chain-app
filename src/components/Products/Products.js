@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Products = () => {
+const Products = ({product}) => {
+    const {_id , productName, description, productQuantity, supplier,productPrice, productPicture } = product;
     return (
         <div>
-            <h2>This is Products sections</h2>
+            
         </div>
     );
 };

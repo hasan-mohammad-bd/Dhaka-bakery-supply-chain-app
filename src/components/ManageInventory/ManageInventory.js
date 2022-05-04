@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ManageInventory.css'
-import { motion } from 'framer-motion';
+import Product from '../../components/Product/Product'
+
 
 const ManageInventory = () => {
+    const [products, setProducts] = useState([])
+    console.log(products);
+
+    useEffect(()=>{
+        fetch("http://localhost:5000/product")
+        .then(res => res.json())
+        .then(data => setProducts(data))
+    },[])
     return (
-        <motion.div intial={{width: 0}} animate={{width:"100%"}} exit={{x: window.innerWidth}}>
-            <h2>This is manage Inventory</h2>
-        </motion.div>
+        <div>
+            {
+                products.map(product => <Product product={product}></Product>)
+            }
+        </div>
     );
 };
 
