@@ -1,4 +1,8 @@
 
+.activeRoute{
+    border-bottom: 3px solid #dac393;
+}
+
 nav a {
     font-weight: 500;
     font-size: 1rem;

@@ -9,7 +9,7 @@ import auth from "../../firebase.init";
 import { FaGoogle } from "@react-icons/all-files/fa/FaGoogle";
 
 const Login = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   const location = useLocation()
   const emailRef = useRef("");
@@ -25,7 +25,7 @@ const Login = () => {
   let from = location?.state?.from?.pathname || "/";
 
   if(loading || loading1){
-    //  <Loading></Loading>
+    //  <Loading></Loading>A
   }
 
   if(user || user1){

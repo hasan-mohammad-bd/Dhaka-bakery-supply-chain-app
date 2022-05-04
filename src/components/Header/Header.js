@@ -4,9 +4,13 @@ import img from "../../img/logo.png";
 import "./Header.css";
 import { RiMenu3Fill } from "@react-icons/all-files/ri/RiMenu3Fill";
 import { AiOutlineCloseSquare } from "@react-icons/all-files/ai/AiOutlineCloseSquare";
+import auth from "../../firebase.init";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
 
 const Header = () => {
     const [menu, setMenu] = useState(false);
+    const [user, loading, error] = useAuthState(auth);
 
 
     const menuSweeper = () => {
@@ -21,12 +25,24 @@ const Header = () => {
         </div>
         <div>
           <nav className={`lg-flex flex-col lg:flex-row absolute lg:static ${menu ? 'top-20': 'top-[-250px]'}`}>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/blogs">Blog</NavLink>
-            <NavLink to="myinventory">My Inventory</NavLink>
-            <NavLink to="additems">Add Items</NavLink>
-            <NavLink to="manageInventory">Manage Inventory</NavLink>
-            <NavLink to="login">Login</NavLink>
+            <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/">Home</NavLink>
+            <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/blogs">Blog</NavLink>
+            {user && <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="myinventory">My Inventory</NavLink>}
+            {
+              user && <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="additems">Add Items</NavLink>
+            }
+            {
+              user && <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="manageInventory">Manage Inventory</NavLink>
+            }
+            {
+              user?  <button onClick={()=>signOut(auth)} className="btn2 ml-5" href="">Sign Out</button> :           
+              <NavLink
+              className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")}
+              to="/login"
+            >
+              Login
+            </NavLink>
+            }
           </nav>
           <div>
               {menu ? <AiOutlineCloseSquare onClick={menuSweeper} className="menu-bar lg:hidden mr-4"/> :
