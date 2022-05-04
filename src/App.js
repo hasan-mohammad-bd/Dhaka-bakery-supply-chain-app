@@ -9,6 +9,7 @@ import Login from "./components/Login/Login";
 import ManageInventory from "./components/ManageInventory/ManageInventory";
 import MyItems from "./components/MyItems/MyItems";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Register from "./components/Register/Register";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 
@@ -31,7 +32,9 @@ function App() {
           ></Route>
           <Route path="additems" element={<RequireAuth><AddItems></AddItems></RequireAuth>}></Route>
           <Route path="myitems" element={<RequireAuth><MyItems></MyItems></RequireAuth>}></Route>
+          <Route path="/inventory/:id" element={<ProductDetails></ProductDetails>}></Route>
         </Routes>
+
       <Footer></Footer>
     </div>
   );
