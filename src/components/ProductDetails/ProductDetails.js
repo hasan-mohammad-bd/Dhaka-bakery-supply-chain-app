@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import {useParams} from 'react-router-dom'
+import ProductDetailsCard from '../ProductDetailsCard/ProductDetailsCard';
 
 const ProductDetails = () => {
+    const {id} = useParams();
+    console.log(id);
+    const [product, setProduct] = useState({});
+
+    useEffect(()=>{
+        const url = `http://localhost:5000/product/${id}`;
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setProduct(data))
+    },[])
+
     return (
         <div>
-            <h2>This is product details page/ what the hell is going on come on!</h2>
+            <ProductDetailsCard product={product}></ProductDetailsCard>
         </div>
     );
 };

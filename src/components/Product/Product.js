@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Product = ({ product }) => {
-    const navigate = useNavigate()
+const Product = ({ product, handleDelete }) => {
+    const navigate = useNavigate();
   const {
     _id,
     productName,
@@ -11,7 +11,10 @@ const Product = ({ product }) => {
     supplier,
     productPrice,
     productPicture,
+    
   } = product;
+
+  
   return (
     <div>
       <p>name:{productName}</p>
@@ -23,6 +26,7 @@ const Product = ({ product }) => {
       <p>price: {productPrice}</p>
       <img src={productPicture} alt="" />
       <button onClick={()=>{navigate(`/inventory/${_id}`)}}>Product details</button>
+      <button onClick={()=>{handleDelete(_id)}}>Delete</button>
     </div>
   );
 };
