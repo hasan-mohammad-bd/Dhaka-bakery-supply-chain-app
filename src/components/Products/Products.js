@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
 
-const Products = ({product}) => {
-    const {_id , productName, description, productQuantity, supplier,productPrice, productPicture } = product;
-    return (
-        <div>
-            <p>name:{productName}</p>
-            <p>description: {description}</p>
-            <p>quantity: {productQuantity}</p>
-            <p>supplier: {supplier}</p>
-            <p>Price: {productPrice}</p>
-            <p>supplier: {supplier}</p>
-            <p>price: {productPrice}</p>
-            <img src={productPicture} alt="" />
-        </div>
-    );
+const Products = ({ product }) => {
+  const [products, setProducts] = useState([]);
+  console.log(products);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/product")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+  return (
+    <div>
+      {products.map((product) => (
+        <Product product={product} key={product._id}></Product>
+      ))}
+    </div>
+  );
 };
 
 export default Products;
