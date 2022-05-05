@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Product = ({ product }) => {
+    const navigate = useNavigate()
   const {
     _id,
     productName,
@@ -20,6 +22,7 @@ const Product = ({ product }) => {
       <p>supplier: {supplier}</p>
       <p>price: {productPrice}</p>
       <img src={productPicture} alt="" />
+      <button onClick={()=>{navigate(`/inventory/${_id}`)}}>Product details</button>
     </div>
   );
 };
