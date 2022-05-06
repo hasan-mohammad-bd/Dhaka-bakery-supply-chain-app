@@ -27,7 +27,7 @@ const Header = () => {
           <nav className={`lg-flex flex-col lg:flex-row absolute lg:static ${menu ? 'top-20': 'top-[-250px]'}`}>
             <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/">Home</NavLink>
             <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="/blogs">Blog</NavLink>
-            {user && <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="myinventory">My Inventory</NavLink>}
+            {user && <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="myitems">My Items</NavLink>}
             {
               user && <NavLink className={({isActive}) => (isActive? "activeRoute" : "inactiveRoute")} to="additems">Add Items</NavLink>
             }
@@ -46,7 +46,7 @@ const Header = () => {
           </nav>
           <div>
               {menu ? <AiOutlineCloseSquare onClick={menuSweeper} className="menu-bar lg:hidden mr-4"/> :
-            <RiMenu3Fill onClick={menuSweeper} className="menu-bar lg:hidden mr-4"/>}
+          <RiMenu3Fill onClick={menuSweeper} className="menu-bar lg:hidden mr-4"/>}
 
           </div>
         </div>
