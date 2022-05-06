@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import AddItems from "./components/AddItems/AddItems";
 import Blogs from "./components/Blogs/Blogs";
@@ -34,6 +35,7 @@ function App() {
           <Route path="myitems" element={<RequireAuth><MyItems></MyItems></RequireAuth>}></Route>
           <Route path="/inventory/:id" element={<ProductDetails></ProductDetails>}></Route>
         </Routes>
+        <ToastContainer></ToastContainer>
 
       <Footer></Footer>
     </div>
