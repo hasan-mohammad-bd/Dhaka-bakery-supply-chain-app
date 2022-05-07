@@ -9,9 +9,9 @@
 }
 
 .btn3{
-    padding: 10px;
-    background-color: #6f4a2a;;
-    color: antiquewhite;
+    padding: 15px 0;
+    background-color: #6f4a2ace;;
+    color: white;
     cursor: pointer;
     transition: all 0.3s ease-in;
     border-radius: 0px 0px 15px 15px;
