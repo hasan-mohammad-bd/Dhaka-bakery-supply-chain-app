@@ -77,7 +77,7 @@ h1 {
     .cover1 {
         background-image: url(../../img/cover1.jpg);
         height: 75vh;
-        width: 100vw;
+        width: 100%;
         background-position: center;
         background-size:cover;
         background-attachment: fixed;

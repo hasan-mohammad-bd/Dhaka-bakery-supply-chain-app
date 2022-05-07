@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import useProducts from "../../hook/useProducts";
 import Product from "../Product/Product";
 
 const Products = ({ product }) => {
-  const [products, setProducts] = useState([]);
-  console.log(products);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/product")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  const [products, setProducts] = useProducts();
 
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");

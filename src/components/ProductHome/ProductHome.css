@@ -1,0 +1,24 @@
+.card {
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img-holder-card {
+    background-color: rgba(128, 128, 128, 0.103) ;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn3{
+    padding: 10px;
+    background-color: #6f4a2a;;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.btn3:hover{
+    background-color: #49301b;
+
+
+}
