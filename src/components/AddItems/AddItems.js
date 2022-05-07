@@ -25,7 +25,7 @@ const AddItems = () => {
         console.log(response);
         const {data} = response;
         if(data.insertedId){
-            toast("Product has been added");
+            toast.success("Product has been added");
             event.target.reset();
         }
     })
@@ -95,7 +95,6 @@ const AddItems = () => {
           </form>
         </div>
       </div>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };

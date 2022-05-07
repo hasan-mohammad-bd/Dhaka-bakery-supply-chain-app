@@ -7,37 +7,36 @@ const Products = ({ product }) => {
   const [products, setProducts] = useState([]);
   console.log(products);
 
-
-
-
   useEffect(() => {
     fetch("http://localhost:5000/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
-    const handleDelete = id => {
-        const proceed = window.confirm('Are you sure?')
-        if(proceed){
-            const url = `http://localhost:5000/product/${id}`;
-            fetch(url, {
-                method: "DELETE"
-            })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                const remaining = products.filter(product => product._id !== id);
-                setProducts(remaining);
-            })
-        }
+  const handleDelete = (id) => {
+    const proceed = window.confirm("Are you sure?");
+    if (proceed) {
+      const url = `http://localhost:5000/product/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          const remaining = products.filter((product) => product._id !== id);
+          setProducts(remaining);
+        });
     }
-
-
+  };
 
   return (
-    <div>
+    <div className="grid grid-cols-1 md:grid-cols-3 container mx-auto">
       {products.map((product) => (
-        <Product product={product} key={product._id} handleDelete={handleDelete}></Product>
+        <Product
+          product={product}
+          key={product._id}
+          handleDelete={handleDelete}
+        ></Product>
       ))}
     </div>
   );

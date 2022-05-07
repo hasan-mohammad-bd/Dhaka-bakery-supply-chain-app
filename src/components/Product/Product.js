@@ -19,13 +19,14 @@ const Product = ({ product, handleDelete, handleUpdateQuantity }) => {
 
   
   return (
-    <div>
+    <div className="">
+      <img className="img-full" src={productPicture} alt="" />
       <p>name:{productName}</p>
       <p>description: {description}</p>
-      <p>quantity: {productQuantity}</p>
+      <p>quantity: {productQuantity} pcs</p>
       <p>supplier: {supplier}</p>
       <p>Price: {productPrice}</p>
-      <img src={productPicture} alt="" />
+      
 
       <button>Delivered</button>
       <button onClick={()=>{navigate(`/inventory/${_id}`)}}>Product details</button>

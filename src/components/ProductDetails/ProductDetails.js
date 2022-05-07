@@ -8,7 +8,8 @@ const ProductDetails = () => {
     const {id} = useParams();
     console.log(id);
     const [product, setProduct] = useState({});
-    const [quantity, setQuantity] = useState(0);
+    const [quantities, setQuantities] = useState(0);
+    console.log(quantities);
 
     useEffect(()=>{
         const url = `http://localhost:5000/product/${id}`;
@@ -20,8 +21,8 @@ const ProductDetails = () => {
 
     const handleUpdateQuantity = (event) => {
         event.preventDefault();
-    
         const productQuantity = event.target.number.value;
+        setQuantities(productQuantity)
         const updateQuantity = {productQuantity};
         const url = `http://localhost:5000/product/${id}`
     
@@ -34,16 +35,22 @@ const ProductDetails = () => {
           })
           .then(res => res.json())
           .then(data => {
-              toast('quantity updated successfully')
+              toast.success('Quantity updated successfully')
               event.target.reset();
+              
           })
     
       }
 
+      
+
+
+      
+
 
     return (
         <div>
-            <ProductDetailsCard product={product} handleUpdateQuantity={handleUpdateQuantity}></ProductDetailsCard>
+            <ProductDetailsCard product={product} quantities={quantities}  handleUpdateQuantity={handleUpdateQuantity} setQuantities={setQuantities}></ProductDetailsCard>
         </div>
     );
 };

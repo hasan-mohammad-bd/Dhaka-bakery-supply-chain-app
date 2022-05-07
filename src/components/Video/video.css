@@ -26,11 +26,16 @@
 
 }
 
-.transparent-grey h1 {
+.transparent-grey{
     font-family: 'Ms Madi', cursive;
 
+    
 
    }
+
+h1 {
+    font-family: 'Ms Madi', cursive; 
+}
 
 .btn1{
     padding: 7px 20px;
