@@ -11,6 +11,7 @@ const Products = ({ product }) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
       const url = `https://stark-dusk-94643.herokuapp.com/product/${id}`;
+      
       fetch(url, {
         method: "DELETE",
       })
