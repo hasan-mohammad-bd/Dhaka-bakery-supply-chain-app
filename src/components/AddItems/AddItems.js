@@ -5,10 +5,13 @@ import auth from "../../firebase.init";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loading from "../Loading/Loading";
 
 
 const AddItems = () => {
     const [user, loading, error] = useAuthState(auth);
+
+
   const handleAddingInventory = (event) => {
       event.preventDefault()
     const product = {

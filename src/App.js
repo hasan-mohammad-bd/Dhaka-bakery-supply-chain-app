@@ -33,7 +33,7 @@ function App() {
           ></Route>
           <Route path="additems" element={<RequireAuth><AddItems></AddItems></RequireAuth>}></Route>
           <Route path="myitems" element={<RequireAuth><MyItems></MyItems></RequireAuth>}></Route>
-          <Route path="/inventory/:id" element={<ProductDetails></ProductDetails>}></Route>
+          <Route path="/inventory/:id" element={<RequireAuth><ProductDetails></ProductDetails></RequireAuth>}></Route>
         </Routes>
         <ToastContainer position="bottom-right"></ToastContainer>
 

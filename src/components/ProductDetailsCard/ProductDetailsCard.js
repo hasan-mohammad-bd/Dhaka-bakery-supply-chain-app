@@ -27,9 +27,6 @@ const ProductDetailsCard = ({ product, handleUpdateQuantity, quantities,setQuant
 
   return (
     <div>
-      <br />
-      <br />
-      <br />
       <form onSubmit={handleUpdateQuantity}>
         <input type="number" name="number" id="number" required/>
         <input type="submit" value="Update" />

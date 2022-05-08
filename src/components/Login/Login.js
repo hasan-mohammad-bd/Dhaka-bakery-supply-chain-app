@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { FaGoogle } from "@react-icons/all-files/fa/FaGoogle";
+import Loading from "../Loading/Loading";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Login = () => {
   let from = location?.state?.from?.pathname || "/";
 
   if(loading || loading1){
-    //  <Loading></Loading>A
+    return <Loading></Loading>
   }
 
   if(user || user1){
