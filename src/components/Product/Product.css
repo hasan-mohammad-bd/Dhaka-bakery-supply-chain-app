@@ -1,3 +1,8 @@
 .btn4 {
     border-radius: 10px;
 }
+
+.input-quantity{
+    border-radius: 10px;
+    border: 2px solid #6f4a2a;
+}

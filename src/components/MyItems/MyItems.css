@@ -1,0 +1,24 @@
+.photo-round{
+    border-radius: 50%;
+}
+
+.user-holder {
+    border-radius: 10px;
+}
+
+.btn6{
+    padding: 7px 20px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+
+    color: #3b332f;
+    border: 2px solid #3b332f;;
+
+}
+
+.btn6:hover{
+    border: 2px solid #fcf1df;
+    background-color: #3b332f;
+    color: #fcf1df;
+}

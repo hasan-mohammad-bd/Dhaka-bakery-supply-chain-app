@@ -23,7 +23,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
-          <Route path="/blog" element={<Blogs></Blogs>}></Route>
+          <Route path="/blogs" element={<Blogs></Blogs>}></Route>
           <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
           <Route path="login" element={<Login></Login>}></Route>
           <Route path="register" element={<Register></Register>}></Route>
