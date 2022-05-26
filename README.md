@@ -1,10 +1,10 @@
 # Dhaka Bakery
 
-Live Site Link [Dhaka Bakery](https://dazzling-salamander-69a1cb.netlify.app/).
+Live Site Link [Dhaka Bakery](https://manufacturer-app-dff29.web.app/).
 
 ## Description
 
-I worked on bakery inventory where I am making bakery product and store them. all feature is welled made. The UI is very attractive in my point of view. There are social login along with simple login. and lot of feature has been added to get better user experience.
+I worked on this kitchen tools, where I am making kitchen tools product . all feature is welled made. The UI is very attractive in my point of view. There are social login along with simple login. and lot of feature has been added to get better user experience.
 
 ## About this project.
 
@@ -15,3 +15,4 @@ I worked on bakery inventory where I am making bakery product and store them. al
 - React router is used for loading free navigation.
 - Server site has been hosted in heroku.com .
 - client site has been hosted in netlify.com .
+- jwt has been used 
