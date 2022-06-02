@@ -1,6 +1,6 @@
 # Dhaka Bakery
 
-Live Site Link [Dhaka Bakery](https://manufacturer-app-dff29.web.app/).
+Live Site Link [Dhaka Bakery](https://inventory-app-6da6a.web.app/).
 
 ## Description
 
