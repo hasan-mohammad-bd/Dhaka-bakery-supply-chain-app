@@ -15,4 +15,3 @@ I worked on this kitchen tools, where I am making kitchen tools product . all fe
 - React router is used for loading free navigation.
 - Server site has been hosted in heroku.com .
 - client site has been hosted in netlify.com .
-- jwt has been used 
