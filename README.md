@@ -8,10 +8,21 @@ I worked on this kitchen tools, where I am making kitchen tools product . all fe
 
 ## About this project.
 
-- Css framework tailwind has been used in this project.
-- Firebase authentication has been used.
-- For icon, React icon has been used.
-- React router is used for loading free navigation.
-- React router is used for loading free navigation.
-- Server site has been hosted in heroku.com .
-- client site has been hosted in netlify.com .
+- The site is fully responsive.
+- Mordan UI has been used.
+- It's a warehouse inventory management website.
+- Product details show product name, description, price,
+and available quantity.
+- The product can be delivered and restocked.
+
+## Technology used
+
+- React 
+- React Router
+- React Tostify 
+- React Icon 
+- Tailwind CSS
+- Firebase Authentication
+- Node Js
+- MongoDB
+- Express Js
