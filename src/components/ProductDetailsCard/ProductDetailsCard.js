@@ -17,16 +17,16 @@ const ProductDetailsCard = ({
   } = product;
   const navigate = useNavigate()
 
-  console.log(productQuantity);
+
 
   const [delivered, setDelivered] = useState(0);
   const [quantities, setQuantities] = useState(0);
-  console.log(quantities);
+
 
   const handleUpdateQuantity = (event) => {
 
     const productQuantityInput = Number(event.target.number.value) + Number(productQuantity)
-    console.log(productQuantityInput);
+
     setQuantities(productQuantityInput)
     const updateQuantity = {productQuantityInput};
     const url = `https://stark-dusk-94643.herokuapp.com/product/${_id}`
@@ -49,7 +49,7 @@ const ProductDetailsCard = ({
   }
   const handleDelivered = (event) => {
     const productQuantityInput = Number(productQuantity) -1
-    console.log(productQuantityInput);
+
     setQuantities(productQuantityInput)
     const updateQuantity = {productQuantityInput};
     const url = `https://stark-dusk-94643.herokuapp.com/product/${_id}`

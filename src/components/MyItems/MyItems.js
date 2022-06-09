@@ -8,7 +8,7 @@ import "./MyItems.css";
 const MyItems = () => {
   const [products, setProducts] = useState([]);
   const [user, loading, error] = useAuthState(auth);
-  console.log(user);
+
 
   useEffect(() => {
     const url = `https://stark-dusk-94643.herokuapp.com/product/`;
@@ -31,7 +31,7 @@ const MyItems = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+
           const remaining = products.filter((product) => product._id !== id);
           setProducts(remaining);
         });

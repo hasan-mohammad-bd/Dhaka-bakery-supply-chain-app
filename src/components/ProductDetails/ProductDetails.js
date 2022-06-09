@@ -6,7 +6,7 @@ import ProductDetailsCard from '../ProductDetailsCard/ProductDetailsCard';
 
 const ProductDetails = () => {
     const {id} = useParams();
-    console.log(id);
+
     const [product, setProduct] = useState({});
 
 

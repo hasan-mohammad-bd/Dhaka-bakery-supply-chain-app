@@ -25,7 +25,7 @@ const AddItems = () => {
     }
     axios.post('https://stark-dusk-94643.herokuapp.com/product', product )
     .then(response =>{
-        console.log(response);
+
         const {data} = response;
         if(data.insertedId){
             toast.success("Product has been added");

@@ -28,7 +28,7 @@ const Register = () => {
   }
 
   if (user || user1) {
-    console.log(user);
+
     navigate("/");
   }
 
