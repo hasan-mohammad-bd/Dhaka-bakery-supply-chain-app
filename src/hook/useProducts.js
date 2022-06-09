@@ -7,10 +7,12 @@ const useProducts = () =>{
     console.log(products);
   
     useEffect(() => {
-      fetch("https://stark-dusk-94643.herokuapp.com/product/")
+      if(products){
+        fetch("https://stark-dusk-94643.herokuapp.com/product/")
         .then((res) => res.json())
         .then((data) => setProducts(data));
-    }, []);
+      }
+    }, [products]);
 
     return [products, setProducts]
 }
