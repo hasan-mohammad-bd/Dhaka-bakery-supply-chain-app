@@ -23,7 +23,7 @@ const AddItems = () => {
         productPicture : event.target.productPicture.value,
         supplier : event.target.supplier.value
     }
-    axios.post('https://stark-dusk-94643.herokuapp.com/product', product )
+    axios.post('https://dhaka-bakery-server-side-production.up.railway.app/product', product )
     .then(response =>{
 
         const {data} = response;

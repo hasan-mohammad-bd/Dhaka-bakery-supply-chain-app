@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 
 const useProducts = () =>{
     const [products, setProducts] = useState([]);
-    console.log(products);
+
   
     useEffect(() => {
-      fetch("https://stark-dusk-94643.herokuapp.com/product/")
+      fetch("https://dhaka-bakery-server-side-production.up.railway.app/product")
         .then((res) => res.json())
         .then((data) => setProducts(data));
-    }, [products]);
+    }, []);
 
     return [products, setProducts]
 }

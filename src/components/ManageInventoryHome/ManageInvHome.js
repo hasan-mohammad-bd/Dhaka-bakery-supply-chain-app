@@ -6,6 +6,7 @@ import Products from "../Products/Products";
 
 const ManageInvHome = () => {
   const [products, setProducts] = useProducts();
+  console.log(products);
   const navigate = useNavigate()
   return (
     <div className="container mx-auto">

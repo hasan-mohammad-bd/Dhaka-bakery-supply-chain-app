@@ -11,7 +11,7 @@ const MyItems = () => {
 
 
   useEffect(() => {
-    const url = `https://stark-dusk-94643.herokuapp.com/product/`;
+    const url = `https://dhaka-bakery-server-side-production.up.railway.app/product/`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -25,7 +25,7 @@ const MyItems = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://stark-dusk-94643.herokuapp.com/product/${id}`;
+      const url = `https://dhaka-bakery-server-side-production.up.railway.app/product/${id}`;
       fetch(url, {
         method: "DELETE",
       })

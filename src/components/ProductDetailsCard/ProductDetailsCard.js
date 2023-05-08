@@ -29,7 +29,7 @@ const ProductDetailsCard = ({
 
     setQuantities(productQuantityInput)
     const updateQuantity = {productQuantityInput};
-    const url = `https://stark-dusk-94643.herokuapp.com/product/${_id}`
+    const url = `https://dhaka-bakery-server-side-production.up.railway.app/product/${_id}`
 
       fetch(url, {
         method: 'PUT',
@@ -52,7 +52,7 @@ const ProductDetailsCard = ({
 
     setQuantities(productQuantityInput)
     const updateQuantity = {productQuantityInput};
-    const url = `https://stark-dusk-94643.herokuapp.com/product/${_id}`
+    const url = `https://dhaka-bakery-server-side-production.up.railway.app/product/${_id}`
 
       fetch(url, {
         method: 'PUT',
