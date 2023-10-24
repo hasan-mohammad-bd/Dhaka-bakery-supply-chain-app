@@ -7,7 +7,7 @@ const useProducts = () =>{
 
   
     useEffect(() => {
-      fetch("https://dhaka-bakery-server-side-production.up.railway.app/product")
+      fetch("https://bakery-7p8g.onrender.com")
         .then((res) => res.json())
         .then((data) => setProducts(data));
     }, []);

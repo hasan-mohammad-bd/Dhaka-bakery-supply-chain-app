@@ -11,7 +11,7 @@ const MyItems = () => {
 
 
   useEffect(() => {
-    const url = `https://dhaka-bakery-server-side-production.up.railway.app/product/`;
+    const url = `https://bakery-7p8g.onrender.com/`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -25,7 +25,7 @@ const MyItems = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://dhaka-bakery-server-side-production.up.railway.app/product/${id}`;
+      const url = `https://bakery-7p8g.onrender.com/${id}`;
       fetch(url, {
         method: "DELETE",
       })
