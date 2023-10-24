@@ -29,7 +29,7 @@ const ProductDetailsCard = ({
 
     setQuantities(productQuantityInput)
     const updateQuantity = {productQuantityInput};
-    const url = `https://bakery-7p8g.onrender.com/${_id}`
+    const url = `https://bakery-7p8g.onrender.com/product/${_id}`
 
       fetch(url, {
         method: 'PUT',
@@ -52,7 +52,7 @@ const ProductDetailsCard = ({
 
     setQuantities(productQuantityInput)
     const updateQuantity = {productQuantityInput};
-    const url = `https://bakery-7p8g.onrender.com/${_id}`
+    const url = `https://bakery-7p8g.onrender.com/product/${_id}`
 
       fetch(url, {
         method: 'PUT',

@@ -10,7 +10,7 @@ const Products = ({ product }) => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://bakery-7p8g.onrender.com/${id}`;
+      const url = `https://bakery-7p8g.onrender.com/product/${id}`;
       
       fetch(url, {
         method: "DELETE",

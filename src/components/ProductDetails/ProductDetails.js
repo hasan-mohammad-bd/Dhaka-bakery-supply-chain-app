@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    const url = `https://bakery-7p8g.onrender.com/${id}`;
+    const url = `https://bakery-7p8g.onrender.com/product/${id}`;
 
     fetch(url)
       .then((res) => res.json())

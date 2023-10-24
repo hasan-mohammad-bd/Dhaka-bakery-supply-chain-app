@@ -23,7 +23,7 @@ const AddItems = () => {
         productPicture : event.target.productPicture.value,
         supplier : event.target.supplier.value
     }
-    axios.post('https://bakery-7p8g.onrender.com', product )
+    axios.post('https://bakery-7p8g.onrender.com/product', product )
     .then(response =>{
 
         const {data} = response;

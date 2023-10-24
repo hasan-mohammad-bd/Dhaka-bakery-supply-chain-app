@@ -7,7 +7,7 @@ const useProducts = () =>{
 
   
     useEffect(() => {
-      fetch("https://bakery-7p8g.onrender.com")
+      fetch("https://bakery-7p8g.onrender.com/product")
         .then((res) => res.json())
         .then((data) => setProducts(data));
     }, []);
